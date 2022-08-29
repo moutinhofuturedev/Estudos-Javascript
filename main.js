@@ -22,17 +22,17 @@ console.log('name' in user) // true
 // podemos usar alguns métodos para retonar os dados dentro de um objeto
 
 // método Object.key => retorna um array com as props (keys) do objeto
-// Object.keys(user)
+Object.keys(user)
 // método Object.value => retorna um array com os valores das propriedades
-// Object.value(user)
+Object.value(user)
 // caso tenha um objeto dentro de outro objeto, usar ( . ) vai dar acesso aos keys e values do outro objeto e reortnar um array com eles
-// Object.keys(user.address)
+Object.keys(user.address)
 
 // Outra tática para mostrar em tela estrutura de dados mais complexas é usar:
-// JSON.stringify(Object.keys(user))
+JSON.stringify(Object.keys(user))
 
 // Usando o método entries() retorna uma estrutura de dados em arrays dentro de array
-// JSON.stringify(Object.entries(user))
+JSON.stringify(Object.entries(user))
 
 // DESESTRUTURAÇÃO ( jeito certo de fazer )
 
@@ -50,7 +50,7 @@ const app = document.getElementById('app')
 const { team, name } = member
 app.textContent = JSON.stringify({team, name})
 
-// desestrturação com function
+// desestruturação com function
 function showJob(member) {
   return member.team.job
 } 
