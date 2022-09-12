@@ -15,3 +15,13 @@ _O Vite é muito mais rápido porque aproveita os módulos ES nativo e não prec
 - ✂️ Desestruturação
 - ♻️ Rest Operator
 - 🏁 Short Syntax
+- 🌡 Opitional Chain
+- 🦾 Map
+- 👀 Filter
+- 👨‍👩‍👧‍👦 Every
+- 🧍🏻‍♂️ Some
+- 🎩 Find e FindIndex
+- 🥽 Reduce
+- 🌂 Template Literals
+- 🔐 Promises
+- 📚 ES Modules
