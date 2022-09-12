@@ -1,6 +1,6 @@
 // Nullish Coalescing Operator
 
-// Caso um variável receba um valor considerado como falsy (null, undefined, número 0) 
+// Caso uma variável receba um valor considerado como falsy (null, undefined) 
 // são valores não valídos para o Javacript 
 // neste caso , o correto é usar Nullish Coalescing Operator (?? ao invés de || )
 const idade = null
@@ -17,7 +17,7 @@ const user = {
   }
 }
 
-console.log('name' in user) // true
+console.log('name' in user) 
 
 // podemos usar alguns métodos para retonar os dados dentro de um objeto
 
@@ -45,10 +45,10 @@ const member = {
   }
 }
 
-// quero pegar somente o os dados de team dentro o objeto member
-const app = document.getElementById('app')
+// quero pegar somente os dados de team dentro o objeto member
+// const app = document.getElementById('app')
 const { team, name } = member
-app.textContent = JSON.stringify({team, name})
+// app.textContent = JSON.stringify({team, name})
 
 // desestruturação com function
 function showJob(member) {
