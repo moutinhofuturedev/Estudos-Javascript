@@ -95,19 +95,19 @@ const app = document.getElementById('app')
 // })
 
 // Agora usando umexemplo do mundo real
-//Escrevendo um código melhor usando async await ( usando try e catch )
+//Escrevendo um código melhor usando a sintaxe do async await ( usando try e catch )
 async function mostraDadosGitHub() {
    try {
       const response = await fetch('https://api.github.com/users/moutinhofuturedev')
       const body = await response.json()
 
-      return app.textContent = JSON.stringify(body.name)
+      return app.textContent = JSON.stringify(body.bio)
 
    } catch (error) { // caso a requisição de erro
       return app.textContent = error  
    }
 }
 
-mostraDadosGitHub().then(name => {
-   console.log(name) 
+mostraDadosGitHub().then(bio => {
+   console.log(bio) 
 })
